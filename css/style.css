@@ -1,0 +1,86 @@
+body {
+  padding-top: 50px;
+  color: #FFFFFF !important;
+  background-image: url("../img/bg_body.png");
+}
+
+.navbar-brand {
+  color: #FFFFFF !important;
+  text-align: center;
+}
+
+.navbar {
+  background-color: rgba(0,100,150,0.6);
+  border-bottom: 1px solid rgba(0,75,50,0.8);
+}
+
+.navbar li a {
+  color: rgb(240,240,80) !important;
+  text-shadow: 1px 1px 3px rgba(30,30,10,1);
+}
+
+.well {
+  vertical-align: middle;
+  background-color: rgba(0,100,150,0.6);
+  border: 1px solid rgba(0,50,75,0.8);
+}
+
+.thumbnail,
+.img-thumbnail {
+  padding: 8px;
+  background-color: rgba(120,120,120,0.4);
+  border: 1px solid rgba(30,30,30,0.8);
+}
+
+.caption {
+  color: #FFFFFF !important;
+  background-color: rgba(60,60,60,0.4);
+  border: 1px solid rgba(30,30,30,0.8);
+  border-radius: 4px;
+}
+
+.select {
+  background-color: rgba(0,150,100,0.6);
+}
+
+.btn-list {
+  color: #FFDD66;
+  text-shadow: 1px 1px 3px #000000;
+  background: -webkit-gradient(
+    linear,50% 0,50% 100%,
+    from(rgba(150,50,0,1)),
+    color-stop(0.05, rgba(210,70,0,1)),
+    color-stop(0.15, rgba(240,80,0,1)),
+    color-stop(0.30, rgba(210,70,0,1)),
+    color-stop(0.70, rgba(150,50,0,1)),
+    color-stop(0.85, rgba(120,40,0,1)),
+    to(rgba(90,30,0,1))
+  );
+  border: 1px solid rgba(40,30,30,1);
+  border-radius: 6px;
+}
+
+/*-- text-color --*/
+span.red {
+  color:#992222;
+}
+span.yellow {
+  color:#FFDD66;
+}
+span.blue {
+  color:#3366BB;
+}
+span.green {
+  color:#337733;
+}
+span.purple {
+  color:#883388;
+}
+span.pink {
+  color:#FFBBFF;
+}
+.param {
+  color: rgba(200,80,40,1);
+}
+
+
