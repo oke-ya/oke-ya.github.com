@@ -2,236 +2,167 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="keyword" content="">
     <title>株式会社おけや</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <script src="js/jquery.js"></script>
-    <script src="js/layout.js"></script>
-    <script src="js/bootstrap.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
   </head>
 
   <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
+      <div class="navbar-header">
+        <button class="navbar-toggle" data-toggle="collapse" data-target=".target">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
         <span class="navbar-brand">株式会社おけや</span>
-        <div class="nav-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a class="btn_toggle select" idx="0">トップ</a></li>
-            <li><a class="btn_toggle select" idx="works">作品情報</a></li>
-            <li><a class="btn_toggle select" idx="company">会社案内</a></li>
-            <li><a class="btn_toggle select" idx="contact">お問い合わせ</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
+      </div>
+
+      <div class="collapse navbar-collapse target">
+        <ul class="nav navbar-nav">
+          <li><a href="">トップ</a></li>
+          <li><a href="">作品情報</a></li>
+          <li><a href="">会社案内</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="">お問い合わせ</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" style="padding:80px 0px;">
+
+    <!-- ■■■トップページ■■■ -->
+    <div class="row">
+      <div class="col-sm-2 col-sm-offset-1 col-xs-3">
+        <div class="well">
+          ■ご挨拶
+        </div>
+      </div>
+      <div class="col-sm-8 col-xs-9">
+        <div class="well">
+          こんにちは。おけやです。<br>
+          大阪の片隅で細々とゲームを開発する会社です。<br>
+        </div>
       </div>
     </div>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12"><br><br></div>
-      </div>
-
-      <!-- ■■■トップページ■■■ -->
-      <div class="doc_toggle" idx="0">
-        <div class="row">
-          <div class="row">
-            <div class="col-lg-2">
-              <div class="well">
-                <span class="pink">■ご挨拶</span><br>
-              </div>
-            </div>
-            <div class="col-lg-8">
-              <div class="well">
-                こんにちは。おけやです。<br>
-                大阪の片隅で細々とゲームを開発する会社です。<br>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-2">
-              <div class="well">
-                <span class="pink">■新着情報</span><br>
-              </div>
-            </div>
-            <div class="col-lg-8">
-              <div class="well">
-                [7/31] ホームページ開設。<br>
-                [7/3] おけや創業。<br>
-              </div>
-            </div>
-          </div>
+    <div class="row">
+      <div class="col-md-2 col-xs-3 col-xs-offset-1">
+        <div class="well">
+          <span class="pink">■新着情報</span><br>
         </div>
       </div>
-
-      <!-- ■■■作品情報■■■ -->
-      <div class="doc_toggle" idx="works">
-        <div class="col-lg-2">
-            <a class="btn btn-list btn_slide" idx="title1">タイトル1</a><br>
-        </div>
-        <div class="col-lg-10 doc_slide" idx="title1">
-          <div class="row">
-            <div class="row">
-              <div class="col-lg-2">
-                <div class="well">
-                  <span class="pink">■タイトル</span>
-                </div>
-              </div>
-              <div class="col-lg-8">
-                <div class="well">
-                  未定
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-2">
-                <div class="well">
-                  <span class="pink">■あらすじ</span>
-                </div>
-              </div>
-              <div class="col-lg-8">
-                <div class="well">
-                  冒険の舞台となるのは絶えず戦争が繰り広げられるヴァンデリア大陸——。<br>
-                  行方不明の姉を捜すため異大陸からやって来たカトラの少女ウルスラ——。<br>
-                  あなたは偶然、戦術家として彼女と共に傭兵団を結成することになる。<br>
-                  傭兵団を巧みな戦術でウルスラ達を操り大陸に平和をもたらそう！<br>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-2">
-                <div class="well">
-                  <span class="pink">■ゲーム画面</span><br>
-                  <span class="param">※開発中のものとなりますので、実際の画面とは異なる場合がございます。</span><br>
-                </div>
-              </div>
-              <div class="col-lg-8">
-                <div class="well col-lg-4 text-center">
-                  <div class="thumbnail">
-                    Now Printing!!
-                    <h5><span class="param">クエスト</span></h5>
-                    <div class="caption">
-                      広大なヴァンデリア大陸を舞台に個性豊かなキャラクター達が様々なストーリーを紡ぎだす！<br>
-                      携帯ゲームとは思えぬ本格的なRPGを楽しめるぞ！<br>
-                    </div>
-                  </div>
-                </div>
-                <div class="well col-lg-4 text-center">
-                  <div class="thumbnail">
-                    Now Printing!!
-                    <h4><span class="param">バトル</span></h4>
-                    <div class="caption">
-                      パネルを選択するだけの簡単操作で自在にスキルやコンボを繰り出せる本格バトル！<br>
-                      立ちはだかる強力なモンスター達を自慢のパーティで倒しまくれ！<br>
-                    </div>
-                  </div>
-                </div>
-                <div class="well col-lg-4 text-center">
-                  <div class="thumbnail">
-                    Now Printing!!
-                    <h5><span class="param">編成</span></h5>
-                    <div class="caption">
-                      パーティやキャラクターを自由にカスタマイズして最強の傭兵団を目指そう！<br>
-                      やり込み度の高い育成システムで自慢のキャラクターが作れるぞ！<br>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div class="col-xs-8">
+        <div class="well">
+          [7/31] ホームページ開設。<br>
+          [7/3] おけや創業。<br>
         </div>
       </div>
-
-      <!-- ■■■会社案内■■■ -->
-      <div class="doc_toggle" idx="company">
-        <div class="row">
-          <div class="col-lg-2">
-            <div class="well">
-              <span class="pink">■社名</span>
-            </div>
-          </div>
-          <div class="col-lg-8">
-            <div class="well">
-              株式会社おけや
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-2">
-            <div class="well">
-              <span class="pink">■代表者</span><br>
-            </div>
-          </div>
-          <div class="col-lg-8">
-            <div class="well">
-              代表取締役　吉田 篤<br>
-              <br>
-              取締役　上野 真史<br>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-2">
-            <div class="well">
-              <span class="pink">■設立</span>
-            </div>
-          </div>
-          <div class="col-lg-8">
-            <div class="well">
-              2013年7月3日
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-2">
-            <div class="well">
-              <span class="pink">■資本金</span>
-            </div>
-          </div>
-          <div class="col-lg-8">
-            <div class="well">
-              400万円
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-2">
-            <div class="well">
-              <span class="pink">■事業内容</span><br>
-            </div>
-          </div>
-          <div class="col-lg-8">
-            <div class="well">
-              1.オンラインゲームの企画、開発、販売、運用及び管理<br>
-              2.コンピュータシステムを利用した情報ネットワークによる情報処理及び情報提供業務<br>
-              3.上記各号に附帯する一切の事業<br>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ■■■お問い合わせ■■■ -->
-      <div class="doc_toggle" idx="contact">
-        <div class="row">
-          <div class="row">
-            <div class="col-lg-2">
-              <div class="well">
-                <span class="pink">■連絡先</span>
-              </div>
-            </div>
-            <div class="col-lg-8">
-              <div class="well">
-                弊社に対するお問い合わせは下記までメールにてお願いいたします。<br>
-                <div class="well">
-                  mail to:info@oke-ya.com
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
     </div>
-  </body>
+
+    <!-- ■■■作品情報■■■ -->
+    <div class="row">
+      <div class="col-md-2 col-xs-3 col-xs-offset-1">
+        <div class="well">■作品情報</div>
+      </div>
+      <div class="col-xs-8">
+        <div class="panel panel-success">
+          <div class="panel-heading">
+            デルタオーケストラ [製作中]
+          </div>
+          <div class="panel-body">
+            <div class="row">
+              <div class="col-xs-4">
+                <div class="panel panel-primary">
+                  <div class="panel-heading">
+                    クエスト
+                  </div>
+                  <div class="panel-body">
+                    広大なヴァンデリア大陸を舞台に個性豊かなキャラクター達が多彩なストーリーを紡ぎだす！<br>
+                    携帯ゲームとは思えぬ本格的なRPGを楽しめるます！<br>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-4">
+                <div class="panel panel-primary">
+                  <div class="panel-heading">
+                    バトル
+                  </div>
+                  <div class="panel-body">
+                    パネルを選択するだけの簡単操作で自在にスキルを繰り出せる！<br>
+                    立ちはだかる強力なモンスター達を自慢のパーティで倒しちゃえ！<br>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-4">
+                <div class="panel panel-primary">
+                  <div class="panel-heading">
+                    編成
+                  </div>
+                  <div class="panel-body">
+                    ユニットを自由にカスタマイズして好みにパーティを組み、最強の傭兵団を目指そう！<br>
+                    やり込み度の高い育成システムで自慢のユニットが作れるぞ！<br>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ■■■会社案内■■■ -->
+    <div class="row">
+      <div class="col-md-2 col-xs-3 col-xs-offset-1">
+        <div class="well">
+          <span class="pink">■会社情報</span><br>
+        </div>
+      </div>
+      <div class="col-xs-8">
+        <table class="table table-striped table-bordered table-hover">
+          <tbody>
+            <tr><th>社名</th><td>株式会社おけや</td></tr>
+            <tr><th>代表者</th>
+              <td>
+                代表取締役CTO　吉田 篤<br>
+                取締役COO　上野 真史<br>
+              </td>
+            </tr>
+            <tr><th>設立</th><td>2013年7月3日</td></tr>
+            <tr><th>資本金</th><td>400万円</td></tr>
+            <tr><th>事業内容</th>
+              <td>
+                1.オンラインゲームの企画、開発、販売、運用及び管理<br>
+                2.コンピュータシステムを利用した情報ネットワークによる情報処理及び情報提供業務<br>
+                3.上記各号に附帯する一切の事業<br>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ■■■お問い合わせ■■■ -->
+    <div class="row">
+      <div class="col-md-2 col-xs-3 col-xs-offset-1">
+        <div class="well">
+          <span class="pink">■お問い合わせ</span>
+        </div>
+      </div>
+      <div class="col-xs-8">
+        <div class="well">
+          mail to:info@oke-ya.com
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
 </html>
