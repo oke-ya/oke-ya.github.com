@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <meta name="description" content="">
   <meta name="keyword" content="">
-  <title>株式会社おけや{{ page.title }}</title>
+  <title>株式会社おけや {{ page.title }}</title>
   <link href="css/layout.css" rel="stylesheet">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <script src="https://code.jquery.com/jquery.js"></script>
@@ -25,17 +25,70 @@
 
   <div class="collapse navbar-collapse target">
     <ul class="nav navbar-nav">
-      <li {% if page.nav == "home" %} class="active" {% endif %}><a href="/"><span class="glyphicon glyphicon-home"></span> ホーム</a></li>
-      <li {% if page.nav == "works" %} class="active" {% endif %}><a href="works.html"><span class="glyphicon glyphicon-list"></span> 作品情報</a></li>
-      <li><a href="http://oke-ya-game.hatenablog.com"><span class="glyphicon glyphicon-pencil"></span> ブログ</a></li>
-      <li><a href="http://shop.oke-ya.com/"><span class="glyphicon glyphicon-shopping-cart"></span> グッズ販売</a></li>
-      <li {% if page.nav == "company" %} class="active" {% endif %}><a href="company.html"><span class="glyphicon glyphicon-briefcase"></span> 会社情報</a></li>
-      <li {% if page.nav == "form" %} class="active" {% endif %}><a href="form.html"><span class="glyphicon glyphicon-envelope"></span> お問い合わせ</a></li>
+      <li {% if page.nav == "home" %} class="active" {% endif %}>
+        <a href="/"><span class="glyphicon glyphicon-home"></span> ホーム</a>
+      </li>
+      <li {% if page.nav == "works" %} class="active" {% endif %}>
+        <a href="works.html"><span class="glyphicon glyphicon-list"></span> 作品情報</a>
+      </li>
+      <li {% if page.nav == "blog" %} class="active" {% endif %}>
+        <a href="blog.html"><span class="glyphicon glyphicon-pencil"></span> ブログ</a>
+      </li>
+      <li>
+        <a href="http://shop.oke-ya.com"><span class="glyphicon glyphicon-shopping-cart"></span> グッズ販売</a>
+      </li>
+      <li {% if page.nav == "company" %} class="active" {% endif %}>
+        <a href="company.html"><span class="glyphicon glyphicon-briefcase"></span> 会社情報</a>
+      </li>
+      <li {% if page.nav == "form" %} class="active" {% endif %}>
+        <a href="form.html"><span class="glyphicon glyphicon-envelope"></span> お問い合わせ</a>
+      </li>
     </ul>
   </div>
 </div>
-<div class="container" style="padding:80px 0px;">
-  {{ content  }}
-</div
+<div class="container-fluid">
+  <br>
+  <br>
+  <br>
+  <br>
+  {{ content }}
+  <br>
+  <br>
+  <div class="row">
+    <div class="col-xs-2 col-xs-offset-4">
+      <div class="list-group">
+        <a href="/" {% if page.nav == "home" %} class="list-group-item active" {% else %} class="list-group-item" {% endif %}>
+          <span class="glyphicon glyphicon-home"></span> ホーム
+        </a>
+        <a href="blog.html" {% if page.nav == "blog" %} class="list-group-item active" {% else %} class="list-group-item" {% endif %}>
+          <span class="glyphicon glyphicon-pencil"></span> ブログ
+        </a>
+        <a href="company.html" {% if page.nav == "company" %} class="list-group-item active" {% else %} class="list-group-item" {% endif %}>
+          <span class="glyphicon glyphicon-briefcase"></span> 会社情報
+        </a>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <div class="list-group">
+        <a href="works.html" {% if page.nav == "works" %} class="list-group-item active" {% else %} class="list-group-item" {% endif %}>
+          <span class="glyphicon glyphicon-list"></span> 作品情報
+        </a>
+        <a href="http://shop.oke-ya.com" {% if page.nav == "shop" %} class="list-group-item active" {% else %} class="list-group-item" {% endif %}>
+          <span class="glyphicon glyphicon-shopping-cart"></span> グッズ販売
+        </a>
+        <a href="form.html" {% if page.nav == "form" %} class="list-group-item active" {% else %} class="list-group-item" {% endif %}>
+          <span class="glyphicon glyphicon-envelope"></span> お問い合わせ
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="text-c">
+  <br>
+  <br>
+  (C)2013-2016 oke-ya.k.k.<br>
+  <br>
+</div>
 </body>
 </html>
